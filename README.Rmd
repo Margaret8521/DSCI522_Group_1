@@ -39,16 +39,16 @@ There are two suggested ways to run this analysis:
 #### 1. Using Docker
 *note - the instructions in this section also depends on running this in a unix shell (e.g., terminal or Git Bash)*
 
-To replicate the analysis, install [Docker](https://www.docker.com/get-started). Then clone this GitHub repository and run the following command at the command line/terminal from the root directory of this project:
+To replicate the analysis, install [Docker](https://www.docker.com/get-started), clone/download this repository, use the command line to navigate to the root of this project on your computer, and then type the following (filling in PATH_ON_YOUR_COMPUTER with the absolute path to the root of this project on your computer).
 
 ```
-docker run --rm -v $(pwd):/home/DSCI_522_Group_301 clsu123/dsci-522-group-301 make -C '/home/DSCI_522_Group_301' all
+docker run --rm -v PATH_ON_YOUR_COMPUTER:/home/DSCI_522_Group_301 clsu123/dsci-522-group-301 make -C '/home/DSCI_522_Group_301' all
 ```
 
-To reset the repo to a clean state, with no intermediate or results files, run the following command at the command line/terminal from the root directory of this project:
+To reset the repo to a clean state, with no intermediate or results files, run the following command:
 
 ```
-docker run --rm -v $(pwd):/home/DSCI_522_Group_301 clsu123/dsci-522-group-301 make -C '/home/DSCI_522_Group_301' clean
+docker run --rm -v PATH_ON_YOUR_COMPUTER:/home/DSCI_522_Group_301 clsu123/dsci-522-group-301 make -C '/home/DSCI_522_Group_301' clean
 ```
 
 #### 2. Without using Docker
