@@ -1,7 +1,15 @@
 Identifying strong predictors of breast cancer recurrence
 ================
 Fanli Zhou
-2020/1/23 (updated: 2020-02-06)
+2020/1/23 (updated: 2020-02-08)
+
+  - [Summary](#summary)
+  - [Introduction](#introduction)
+  - [Methods](#methods)
+      - [Data](#data)
+      - [Analysis](#analysis)
+  - [Results and Discussion](#results-and-discussion)
+  - [References](#references)
 
 # Summary
 
@@ -188,13 +196,16 @@ Figure 2. ROC curve of the test data set.
 
 If time permits, we want to improve our model in two ways. First, we
 need to find a better way to handle data imbalance other than just
-ajusting the scoring method. With an advanced approach to deal with the
-data imbalance problem, we expect to see a big improvement in the
-recall, precision, and f1 scores for both training and test data.
-Second, we want to explore other feature selection methods to help us
-decide which predictors are better over others. We also need some advice
-and experience in handling categorical variables during feature
-selection.
+ajusting the scoring method. We could try tuning the `class weight`
+hyperparameter to adjust weights assigned to each class, or
+undersampling/oversampling to create a balanced dataset. With an
+advanced approach to deal with the data imbalance problem, we expect to
+see a big improvement in the recall, precision, and f1 scores for both
+training and test data. Second, we want to explore other feature
+selection methods to help us decide which predictors are better over
+others. We could try `RFE` and L1 regularization to find out important
+features. We also need some advice and experience in handling
+categorical variables during feature selection.
 
 # References
 
@@ -235,7 +246,7 @@ Edmonton. <https://breast-cancer.ca/chance-cure/>.
 <div id="ref-Hunter:2007">
 
 Hunter, J. D. 2007. “Matplotlib: A 2D Graphics Environment.” *Computing
-in Science & Engineering* 9 (3). IEEE COMPUTER SOC: 90–95.
+in Science & Engineering* 9 (3): 90–95.
 <https://doi.org/10.1109/MCSE.2007.55>.
 
 </div>
@@ -290,8 +301,7 @@ Scotts Valley, CA: CreateSpace.
 
 Walt, Stéfan van der, S Chris Colbert, and Gael Varoquaux. 2011. “The
 Numpy Array: A Structure for Efficient Numerical Computation.”
-*Computing in Science & Engineering* 13 (2). IEEE Computer Society:
-22–30.
+*Computing in Science & Engineering* 13 (2): 22–30.
 
 </div>
 

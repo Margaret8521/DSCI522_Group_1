@@ -92,6 +92,6 @@ knitr::include_graphics("../results/roc_report.png")
 
 Figure 2. ROC curve of the test data set.
 
-If time permits, we want to improve our model in two ways. First, we need to find a better way to handle data imbalance other than just ajusting the scoring method. With an advanced approach to deal with the data imbalance problem, we expect to see a big improvement in the recall, precision, and f1 scores for both training and test data. Second, we want to explore other feature selection methods to help us decide which predictors are better over others. We also need some advice and experience in handling categorical variables during feature selection.
+If time permits, we want to improve our model in two ways. First, we need to find a better way to handle data imbalance other than just ajusting the scoring method. We could try tuning the `class weight` hyperparameter to adjust weights assigned to each class, or undersampling/oversampling to create a balanced dataset. With an advanced approach to deal with the data imbalance problem, we expect to see a big improvement in the recall, precision, and f1 scores for both training and test data. Second, we want to explore other feature selection methods to help us decide which predictors are better over others. We could try `RFE` and L1 regularization to find out important features. We also need some advice and experience in handling categorical variables during feature selection.
 
 # References
