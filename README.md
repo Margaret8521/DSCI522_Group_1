@@ -3,7 +3,7 @@
 
 # Identifying strong predictors of breast cancer recurrence
 
-Group Members: Haoyu(Clara) Su, Fanli Zhou, Ke Xin(Margaret) Zhao
+Group Members: Haoyu Su, Fanli Zhou, Ke Xin(Margaret) Zhao
 
 We explored to use a logistic regression model to identify strong
 predictors of breast cancer recurrence. Based on the feature weights
@@ -43,17 +43,18 @@ There are two suggested ways to run this analysis:
 a unix shell (e.g., terminal or Git Bash)*
 
 To replicate the analysis, install
-[Docker](https://www.docker.com/get-started). Then clone this GitHub
-repository and run the following command at the command line/terminal
-from the root directory of this project:
+[Docker](https://www.docker.com/get-started), clone/download this
+repository, use the command line to navigate to the root of this project
+on your computer, and then type the following (filling in
+PATH\_ON\_YOUR\_COMPUTER with the absolute path to the root of this
+project on your computer).
 
-    docker run --rm -v $(pwd):/home/DSCI_522_Group_301 clsu123/dsci-522-group-301 make -C '/home/DSCI_522_Group_301' all
+    docker run --rm -v PATH_ON_YOUR_COMPUTER:/home/DSCI_522_Group_301 clsu123/dsci-522-group-301 make -C '/home/DSCI_522_Group_301' all
 
 To reset the repo to a clean state, with no intermediate or results
-files, run the following command at the command line/terminal from the
-root directory of this project:
+files, run the following command:
 
-    docker run --rm -v $(pwd):/home/DSCI_522_Group_301 clsu123/dsci-522-group-301 make -C '/home/DSCI_522_Group_301' clean
+    docker run --rm -v PATH_ON_YOUR_COMPUTER:/home/DSCI_522_Group_301 clsu123/dsci-522-group-301 make -C '/home/DSCI_522_Group_301' clean
 
 #### 2\. Without using Docker
 
