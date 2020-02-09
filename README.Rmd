@@ -67,7 +67,7 @@ make clean
 ## Dependency diagram
 
 ```{r figure1, echo=FALSE, out.width = '100%'}
-knitr::include_graphics("./img/Makefile.png")
+knitr::include_graphics("./Makefile.png")
 ```
 
 ## Dependencies
