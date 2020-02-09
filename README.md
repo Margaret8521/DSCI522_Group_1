@@ -73,7 +73,7 @@ root directory of this project:
 
 ## Dependency diagram
 
-<img src="./img/Makefile.png" width="100%" />
+<img src="./Makefile.png" width="100%" />
 
 ## Dependencies
 
